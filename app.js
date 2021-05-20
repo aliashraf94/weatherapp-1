@@ -32,7 +32,7 @@ let showWeatherInfo = (weatherObject) => {
     
 let {
     city_name,
-    coutry_code,
+    country_code,
     temp,
     weather : {description, icon}
 } = weatherObject;
@@ -49,7 +49,5 @@ let temperatureValueP =  document.querySelector('.temperature-value p');
 let weathericonPic =  document.querySelector('.weather-icon img');
 let sliceFirstLetter = icon.slice(1);
 weathericonPic.setAttribute('src', `icons/${sliceFirstLetter}.png`);
-​
 }
-
 getUserPosition();
